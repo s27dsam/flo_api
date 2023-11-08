@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
+
 def flo_athletes():
     # The URL of the page you want to scrape
     url = 'https://www.flograppling.com/people'
@@ -65,7 +66,7 @@ def latest_new_headlines():
         soup = BeautifulSoup(response.content, 'html.parser')
         #     # Find the elements that contain the athlete's name
         news = soup.find_all('h5',
-                                         class_='h5 mb-1 flex-grow-0 color-900 mobile-header-resize text-line-clamp-2 apply-text-hover')
+                             class_='h5 mb-1 flex-grow-0 color-900 mobile-header-resize text-line-clamp-2 apply-text-hover')
         # Extract and print each athlete's name
         headlines = []
         for headline in news:
@@ -73,5 +74,14 @@ def latest_new_headlines():
         return {"Flo News Headlines": headlines}
     else:
         return "Failed to retrieve the webpage"
+
+
+def filter_events_by_keyword(events: list, keyword: str) -> list:
+    # Filter the events that contain the keyword, case insensitive
+    keyword_lower = keyword.lower()
+    filtered_events = [event for event in events if keyword_lower in event.lower()]
+    return filtered_events
+
+
 
 
