@@ -11,7 +11,9 @@ Welcome to the FLO-GRAPPLING FastAPI service! This service provides a RESTful AP
 
 Currently Live on [https://rapidapi.com](https://rapidapi.com/s27dsam/api/flograppling)
 ##
-<img width="1203" alt="Screenshot 2023-11-09 at 12 05 15" src="https://github.com/s27dsam/flo_api/assets/80742619/1096c367-fa5a-4255-8c5a-2812c259a373">
+
+
+<img width="1203" alt="Screenshot 2023-11-09 at 12 05 15" src="https://github.com/s27dsam/flo_api/assets/80742619/80d1e9a2-a522-4925-be5d-691085d8ae06">
 
 Contributing
 We welcome contributions from the community. If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
