@@ -4,7 +4,7 @@ from models import Event_Names
 
 app = FastAPI(title="FLO-GRAPPLING", description="FLO GRAPPLING ", version="1.0.0")
 
-# lists all the athletes on the flo-grappling website
+# lists all the athletes on the flo-grappling website not in any order
 @app.get("/athletes", response_model=dict, summary="all the current flo athletes list on flo grappling")
 async def get_athletes():
     athletes = flo_athletes()
